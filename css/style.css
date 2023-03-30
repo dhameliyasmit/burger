@@ -1,0 +1,637 @@
+/* ---- Arvo ---- */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Cormorant:wght@600;700&display=swap');
+
+/* ---- Rubik ---- */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Cormorant:wght@600;700&family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;1,300;1,400&display=swap');
+
+/* ---- Shadows Into Light Two ---- */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Cormorant:wght@600;700&family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;1,300;1,400&family=Shadows+Into+Light+Two&display=swap');
+
+
+/* arvo-regular - latin */
+@font-face {
+     font-family: 'Arvo';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/arvo-v20-latin-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/arvo-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/arvo-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/arvo-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/arvo-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/arvo-v20-latin-regular.svg#Arvo') format('svg'); /* Legacy iOS */
+   }
+   /* arvo-700 - latin */
+   @font-face {
+     font-family: 'Arvo';
+     font-style: normal;
+     font-weight: 700;
+     src: url('../fonts/arvo-v20-latin-700.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/arvo-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/arvo-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/arvo-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/arvo-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/arvo-v20-latin-700.svg#Arvo') format('svg'); /* Legacy iOS */
+   }
+
+/* rubik-regular - latin */
+@font-face {
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/rubik-v23-latin-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/rubik-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/rubik-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/rubik-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/rubik-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/rubik-v23-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
+   }
+   /* rubik-italic - latin */
+   @font-face {
+     font-family: 'Rubik';
+     font-style: italic;
+     font-weight: 400;
+     src: url('../fonts/rubik-v23-latin-italic.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/rubik-v23-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/rubik-v23-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/rubik-v23-latin-italic.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/rubik-v23-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/rubik-v23-latin-italic.svg#Rubik') format('svg'); /* Legacy iOS */
+   }
+   /* rubik-500italic - latin */
+   @font-face {
+     font-family: 'Rubik';
+     font-style: italic;
+     font-weight: 500;
+     src: url('../fonts/rubik-v23-latin-500italic.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/rubik-v23-latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/rubik-v23-latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/rubik-v23-latin-500italic.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/rubik-v23-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/rubik-v23-latin-500italic.svg#Rubik') format('svg'); /* Legacy iOS */
+   }
+
+/* shadows-into-light-two-regular - latin */
+@font-face {
+     font-family: 'Shadows Into Light Two';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/shadows-into-light-two-v13-latin-regular.eot'); /* IE9 Compat Modes */
+     src: local(''),
+          url('../fonts/shadows-into-light-two-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/shadows-into-light-two-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/shadows-into-light-two-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/shadows-into-light-two-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/shadows-into-light-two-v13-latin-regular.svg#ShadowsIntoLightTwo') format('svg'); /* Legacy iOS */
+   }
+
+  
+
+html{
+     scroll-behavior: smooth;
+}
+:root{
+     --mainheading:'Arvo', serif;
+     --fencyfont:'Shadows Into Light Two', cursive;
+     --btncolor: #e7272d;
+     --btnhovercolor: #ffcc00;
+     --whitecolor: #ffffff;
+}
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Rubik', sans-serif;
+}
+
+img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+ul {
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+}
+
+.fonts {
+     font-family: 'Lora', serif;
+}
+
+.spacer {
+     padding: 140px 0px;
+}
+
+.container {
+     width: 1140px;
+     margin: 0px auto;
+}
+
+.flex {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.justify_center {
+     justify-content: center;
+}
+
+.justify_between {
+     justify-content: space-between;
+}
+
+.align_center {
+     align-items: center;
+}
+h2{
+     font-family: var(--mainheading);
+     font-weight: bold;
+}
+
+.title{
+     text-align: center;
+     padding-bottom: 55px;
+}
+.title h3{
+     font-size: 30px;
+     color: var(--btncolor);
+     font-weight: 500;
+     font-family: var(--fencyfont);
+}
+.title h2{
+     font-size: 55px;
+}
+
+/* ==== start header ==== */
+.banner_img{
+     background-image: url(../image/asset\ 30.jpeg);
+     background-size: cover;
+}
+.main_logo {
+     width: 20%;
+}
+.logo_contant{
+     font-size: 20px;
+     font-weight: bold;
+     color: var(--whitecolor);
+     margin-left: 30px;
+} 
+.logo_contant span{
+     color: var(--btnhovercolor);
+}
+.logo_img{
+     width: 25%;
+}
+.main_header{
+     font-family: var(--mainheading);
+     padding: 50px 0px;
+}
+header {
+     width: 100%;
+     /* position: fixed; */
+}
+.nevbar{
+     margin-left: 200px;
+}
+.main_menu li a {
+     margin: 0px 15px;
+     padding: 5px 0px;
+     color: var(--whitecolor);
+     font-size: 14px;
+     font-weight: bold;
+}
+.main_menu li a:hover,
+.header_icon i:hover{
+     color: var(--btncolor);
+}
+.header_icon i{
+     color: var(--whitecolor);
+     padding: 0px 5px;
+}
+
+.banner_container{
+     padding: 200px 0px;
+}
+.banner_container span{
+     font-family: var(--fencyfont);
+     color: var(--whitecolor);
+     font-size: 30px;
+}
+.banner_container h2{
+     font-size: 75px;
+     color: var(--whitecolor);
+}
+.banner_container h3{
+     font-family: var(--mainheading);
+     font-size: 65px;
+     color: var(--btnhovercolor);
+}
+.btn{
+     margin: 50px 0px;
+}
+.btn a{
+     color: var(--whitecolor);
+     font-size: 14px;
+     font-weight: bold;
+     background-color: var(--btncolor);
+     padding: 20px 55px;
+     transition: .3s;
+}
+.btn:hover a,
+.order_btn:hover .ord_btn{
+     color: black;
+     background-color: var(--btnhovercolor);
+}
+/* ==== end header ==== */
+
+/* ==== start order section ==== */
+.chef_img{
+     width: 33.33%;
+     padding-top: 100px;
+     padding-right: 30px;
+}
+.chef_intro{
+     width: 33.33%;
+     margin: auto 0px;
+}
+.order_reservation{
+     margin-top: 70px;
+     margin-left: 30px;
+     padding: 40px;
+     width: calc(33.33% - 30px);
+}
+.chef_intro .title h2{
+     font-size: 50px;
+}
+.chef_intro .title span{
+     font-size: 20px;
+     color: #6d6a6a;
+     font-weight: bold;
+}
+.chef_intro .chef_detail p{
+     font-size: 15px;
+     color: #888787;
+     line-height: 22.5px;
+     margin-top: 30px;
+}
+.chef_signature{
+     margin-top: 30px;
+     width: 30%;
+}
+.order_reservation{
+     background-color: black;
+     height: 100%;
+     background-image: url(../image/asset\ 31.png);
+}
+.order_reservation h2{
+     font-size: 30px;
+     color: var(--whitecolor);
+     line-height: 33px;
+}
+.name input{
+     width: 100%;
+     border: none;
+     outline: none;
+     padding: 10px;
+     margin: 10px 0px;
+}
+.name .message{
+     padding-bottom: 100px;
+}
+.order_btn .ord_btn{
+     width: 100%;
+     background-color: var(--btncolor);
+     margin-top: 10px;
+     padding: 15px 0px;
+     text-align: center;
+     transition: .3s;
+}
+.name .ord_btn a{
+     color: var(--whitecolor);
+     font-weight:bold;
+     font-size: 14px;  
+}
+.order_btn:hover .ord_btn a{
+     color: black;
+}
+
+/* -- best offer -- */
+.best_offer .offer_bg_img{
+     background: url(../image/asset\ 32.jpeg);
+     background-size: cover;
+     background-position: right top;
+}
+.offer_bg_img .offer_detail{
+     padding-left: 40%;
+}
+.offer_detail .titel h4{
+     font-size: 30px;
+     color: var(--whitecolor);
+     font-family: var(--fencyfont);
+}
+.offer_detail .titel h3{
+     font-size: 53px;
+     margin: 5px 0px;
+     color: var(--whitecolor);
+     font-family: var(--mainheading);
+     font-weight: bold;
+}
+.offer_detail .price p,
+.offer_detail .price span{
+     font-size: 55px;
+     margin: 5px 0px;
+     font-family: var(--mainheading);
+     font-weight: bold;
+     color: var(--btnhovercolor);
+}
+.offer_detail .price span{
+     font-size: 24px;
+     color: var(--whitecolor);
+     border-bottom: 5px var(--whitecolor) solid;
+}
+.offer_detail .content p{
+     font-size: 23px;
+     margin: 5px 0px;
+     color: var(--whitecolor);
+}
+.order_btn .btn a{
+     padding: 20px 35px;
+}
+/* ==== end order section ==== */
+
+/* ==== start pricing section ==== */
+/* -- start product_menu -- */
+.our_menu .our_menubar h2{
+    font-size: 13px;
+    margin: 0px 20px;
+}
+.manu .single_menu{
+     width: calc(25% - 30px);
+     margin: 10px 15px;
+}
+.manu .menu_details,
+.manu .manu_price{
+     text-align: center;
+     margin: 20px 0px;
+}
+.manu .menu_details p{
+     font-size: 15px;
+     margin-top: 20px;
+     line-height: 22.5px;
+     color: #888787;
+}
+.manu .manu_price h2{
+     color: var(--btncolor);
+}
+/* -- end product_menu -- */
+
+/* -- start Testimonials -- */
+.Testimonials_bg{
+     background: url(../image/asset\ 33.jpeg);
+}
+.Testimonial .title h3{
+     color: var(--btnhovercolor);
+}
+.Testimonial .title h2{
+     color: var(--whitecolor);
+}
+.Testimonial_item .single_item{
+     width: calc(33.33% - 30px);
+}
+.single_item{
+     margin: 0px 15px;
+}
+.single_item .item_details{
+     background-color: var(--whitecolor);
+     margin-top: 30px;
+}
+.item_details i{
+     font-size: 18px;
+     color: var(--btncolor);
+     padding: 25px 30px;
+}
+.item_details p{
+     padding: 0px 30px;
+     color: #888787;
+     line-height: 22.5px;
+}
+.item_details h4{
+     font-size: 20px;
+     padding: 30px;
+}
+/* -- end Testimonials -- */
+
+/* -- start Choose -- */
+.choose_details .left_side{
+     width: calc(50% - 15px);
+     margin-right: 15px;
+}
+.choose_details .left_side h2{
+     font-size: 28px;
+}
+.choose_details .left_side span{
+     font-size: 15px;
+     display: block;
+     line-height: 22.5px;
+     margin-top: 30px;
+     color: #888787;
+}
+.choose_details .left_side .details{
+     background-color: #EFEDED;
+     margin: 30px 0px;
+}
+.choose_details .left_side .details p{
+     font-size: 18px;
+     font-weight: bold;
+     padding: 15px 30px;
+}
+.choose_details .left_side .details i{
+     display: flex;
+     padding-right: 40px;
+     align-items: center;
+}
+.choose_details .left_side .details:hover{
+     background-color: var(--btnhovercolor);
+}
+.choose_details .right_side{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     width: calc(50% - 15px);
+     margin-left: 15px;
+}
+.choose_details .right_side .image{
+     padding: 7px;
+}
+.choose_details .right_side .row{
+     grid-row: 2 / span 2;
+}
+/* -- end Choose -- */
+/* -- start slider -- */
+.slider{
+     background-color: var(--btncolor);
+}
+.slider_bg .images{
+     padding: 55px 10px;
+}
+
+.owl-nav{
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     margin: 0;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next{
+     position: absolute;
+     left: 150px;
+     font-size: 20px !important;
+     color: #fff !important;
+     border-radius: 0% !important;
+     height: 60px;
+     width: 50px;
+     background: #fff !important;
+     transform: translateY(-50%);
+}
+.owl-nav .owl-next{
+     left: auto;
+     right: 0px;
+}
+/* -- end slider -- */
+
+/* -- start Our Team -- */
+.Team_details .single_item{
+     width: calc(25% - 30px);
+}
+.Team_details .single_item .image{
+     border-bottom: 5px var(--btnhovercolor) solid;
+     border-top: 5px var(--btnhovercolor) solid;
+}
+.Team_details .single_item .item_details{
+     text-align: center;
+}
+.Team_details .single_item .item_details h4{
+     padding: 0px;
+}
+.Team_details .single_item .item_details i{
+     margin-top: 20px;
+     padding: 0px 10px;
+     font-size: 15px;
+}
+/* -- end Our Team -- */
+
+/* -- start banner -- */
+.banner .banner_bg{
+     background: url(../image/asset\ 34.jpeg);
+     background-size: cover;
+     background-position: left top;
+}
+.banner .banner_bg .banner_details{
+     padding: 100px 0px;
+}
+.banner_details .Opening_Hours{
+     margin-left: 150px;
+}
+.banner_details .free_Shipping h2,
+.banner_details .Opening_Hours h2{
+     font-size: 30px;
+     color: var(--whitecolor);
+     margin-bottom: 30px;
+}
+.banner_details .free_Shipping p,
+.banner_details .Opening_Hours p{
+     font-size: 22px;
+     color: var(--whitecolor);
+     margin-bottom: 10px;
+}
+.banner_details .free_Shipping h4,
+.banner_details .Opening_Hours h4{
+     font-size: 22px;
+     color: var(--whitecolor);
+}
+.banner_details .free_Shipping h4 span,
+.banner_details .Opening_Hours h4 span{
+     color: var(--btnhovercolor);
+}
+/* -- start banner -- */
+/* ==== end pricing section ==== */
+
+/* ==== start Contact section ==== */
+.Contact_Us{
+     display: flex;
+}
+.Contact_Us .name{
+     width: 50%;
+     padding: 0px 30px;
+}
+.Contact_Us .name input{
+     width: 100%;
+     border: none;
+     outline: none;
+     padding: 15px;
+     background-color: #EFEDED;
+     margin: 15px 0px;
+}
+.Contact_Us .name .message{
+     padding-bottom: 100px;
+}
+.Contact_Us .order_btn .ord_btn{
+     width: 100%;
+     background-color: var(--btncolor);
+     margin-top: 10px;
+     padding: 15px 0px;
+     text-align: center;
+     transition: .3s;
+}
+.Contact_Us .name .ord_btn a{
+     color: var(--whitecolor);
+     font-weight:bold;
+     font-size: 14px;  
+}
+.Contact_Us .order_btn:hover .ord_btn a{
+     color: black;
+}
+.Contact_Us .order_btn:hover .ord_btn{
+     background-color: var(--btnhovercolor);
+}
+.Contact_Us .Contact_Us .map{
+     width: 50%;
+     margin: 15px;
+}
+/* ==== end Contact section ==== */
+
+/* ==== start futor ==== */
+.futor_logo {
+     width: 25%;
+}
+.futor_section{
+     background-color: black;
+     padding: 30px 0px;
+}
+.futor_icon,
+.futor_Copyright{
+     display: flex;
+     align-items: center;
+}
+.futor_icon i{
+     color: var(--whitecolor);
+     font-size: 14px;
+     padding: 0px 10px;
+}
+.futor_icon i:hover{
+     color: var(--btncolor);
+}
+.futor_Copyright p{
+     color: #fff;
+}
+/* ==== end futor ==== */
